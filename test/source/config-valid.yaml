@@ -1,0 +1,64 @@
+app:
+  name: "Biller Connector"
+  env: "development"
+  debug: true
+database:
+  host: "localhost"
+  port: 3306
+  user: "root"
+  pass: ""
+  name: "db_something"
+  max_open_connection: 1
+  max_idle_connection: 1
+  max_connection_life_time: 1
+kafka:
+  broker: "http://localhost:29092"
+  inquiry_topic: "biller-connector.inquiry"
+  inquiry_result_topic: "frotier.store-inquiry-result"
+  payment_topic: "biller-connector.payment"
+  check_status_topic: "biller-connector.check-status"
+  pending_processor_topic: "frontier.pending-processor"
+  update_transaction_topic: "frontier.transaction-update"
+worker:
+  inquiry:
+    number_of_consumer: 1
+    number_of_worker: 1
+    commit_every: 1
+    commit_backoff: 1
+    commit_within: 1
+  payment:
+    number_of_consumer: 1
+    number_of_worker: 1
+    commit_every: 1
+    commit_backoff: 1
+    commit_within: 1
+    message_expire_time: 10
+  check_status:
+    number_of_consumer: 1
+    number_of_worker: 1
+    commit_every: 1
+    commit_backoff: 1
+    commit_within: 1
+    retry_count: 1
+    retry_every: 1
+    retry_in_day: 1
+redis:
+  host: "localhost:6379"
+  success_inquiry_retention: 5
+  failed_inquiry_retention: 1
+  cache_prefix: "biller_connector_:_"
+  encryption_key: "supersupersecret"
+http:
+  max_idle_connection: 10
+  idle_conn_timeout: 100
+  max_connection_per_host: 100
+  request_timeout: 60
+  insecure_skip_verify: true
+  # certificate_path: "valid-path"
+biller:
+  private_key_path: "./../../../test/source/private.key"
+  end_point: "https://thirdparty.com/service"
+datadog:
+  apm_address: "localhost:8125"
+  apm_rate_sampler: 0.7
+  metric_address: "localhost:8126"
