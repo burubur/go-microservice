@@ -9,8 +9,8 @@ import (
 	"bitbucket.org/kudoindonesia/frontier_biller_sdk/log"
 	"bitbucket.org/kudoindonesia/frontier_biller_sdk/tracer"
 	"bitbucket.org/kudoindonesia/koolkit/koollog"
-	"github.com/burubur/go-microservice/internal/app/inquiry"
-	"github.com/burubur/go-microservice/internal/platform/configuration"
+	"github.com/burubur/genel-template/internal/app/inquiry"
+	"github.com/burubur/genel-template/internal/platform/configuration"
 )
 
 // Inquiry will serve an inquiry service

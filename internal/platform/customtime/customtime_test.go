@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/burubur/go-microservice/internal/platform/customtime"
+	"github.com/burubur/genel-template/internal/platform/customtime"
 	"github.com/stretchr/testify/assert"
 )
 

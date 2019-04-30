@@ -4,8 +4,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/burubur/go-microservice/cmd/servd"
-	"github.com/burubur/go-microservice/internal/platform/configuration"
+	"github.com/burubur/genel-template/cmd/servd"
+	"github.com/burubur/genel-template/internal/platform/configuration"
 )
 
 const (

@@ -12,7 +12,7 @@ database:
   max_idle_connection: 1
   max_connection_life_time: 1
 kafka:
-  broker: "http://localhost:29092"
+  broker: "localhost:29092"
   inquiry_topic: "biller-connector.inquiry"
   inquiry_result_topic: "frotier.store-inquiry-result"
   payment_topic: "biller-connector.payment"

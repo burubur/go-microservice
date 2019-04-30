@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/burubur/go-microservice/internal/platform/httprequest"
+	"github.com/burubur/genel-template/internal/platform/httprequest"
 	"github.com/stretchr/testify/assert"
 	httpmock "gopkg.in/jarcoal/httpmock.v1"
 )

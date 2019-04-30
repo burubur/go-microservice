@@ -8,8 +8,8 @@ import (
 	"bitbucket.org/kudoindonesia/frontier_biller_sdk/log"
 	"bitbucket.org/kudoindonesia/frontier_biller_sdk/tracer"
 	"bitbucket.org/kudoindonesia/koolkit/koollog"
-	"github.com/burubur/go-microservice/internal/app/checkstatus"
-	"github.com/burubur/go-microservice/internal/platform/configuration"
+	"github.com/burubur/genel-template/internal/app/checkstatus"
+	"github.com/burubur/genel-template/internal/platform/configuration"
 )
 
 // CheckStatus will provide a checkstatus service
@@ -62,7 +62,7 @@ func initCheckStatusProductHandler() map[string]checkstatus.StatusChecker {
 	// config := configuration.Values
 
 	productHandlers := map[string]checkstatus.StatusChecker{
-		// instantigithub.com/burubur/go-microservice/internalatae all available product handler here!
+		// instantigithub.com/burubur/genel-template/internalatae all available product handler here!
 	}
 
 	return productHandlers

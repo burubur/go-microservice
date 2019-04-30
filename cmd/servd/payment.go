@@ -11,8 +11,8 @@ import (
 	"bitbucket.org/kudoindonesia/frontier_biller_sdk/pkg/database"
 	"bitbucket.org/kudoindonesia/frontier_biller_sdk/tracer"
 	"bitbucket.org/kudoindonesia/koolkit/koollog"
-	"github.com/burubur/go-microservice/internal/app/payment"
-	"github.com/burubur/go-microservice/internal/platform/configuration"
+	"github.com/burubur/genel-template/internal/app/payment"
+	"github.com/burubur/genel-template/internal/platform/configuration"
 )
 
 // Payment will serve a payment service
@@ -76,7 +76,7 @@ func initPaymentProductHandler() map[string]payment.Payer {
 	// config := configuration.Values
 
 	productHandlers := map[string]payment.Payer{
-		// instantigithub.com/burubur/go-microservice/internalatae all available product handler here!
+		// instantigithub.com/burubur/genel-template/internalatae all available product handler here!
 	}
 
 	return productHandlers
